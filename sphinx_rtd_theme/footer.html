@@ -1,24 +1,12 @@
+<div class="wrapper-footer">
 <footer>
-  {% if next or prev %}
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      {% if next %}
-        <a href="{{ next.link|e }}" class="btn btn-neutral float-right" title="{{ next.title|striptags|e }}">Next <span class="fa fa-arrow-circle-right"></span></a>
-      {% endif %}
-      {% if prev %}
-        <a href="{{ prev.link|e }}" class="btn btn-neutral" title="{{ prev.title|striptags|e }}"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      {% endif %}
-    </div>
-  {% endif %}
-
-  <hr/>
-
   <div role="contentinfo">
     <p>
     {%- if show_copyright %}
       {%- if hasdoc('copyright') %}
         {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
       {%- else %}
-        {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}
+        {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.  | <a href="{{ path}}/imprint.html">Imprint</a> | <a href="{{ path}}/termsconditions.html">Terms &amp; Conditions</a> | <a href="{{ path}}/dataprivacypolicy.html">Data Privacy Policy</a> {% endtrans %}
       {%- endif %}
     {%- endif %}
 
@@ -33,4 +21,4 @@
   {%- endif %}
 
 </footer>
-
+</div>

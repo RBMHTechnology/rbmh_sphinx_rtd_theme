@@ -1,9 +1,11 @@
 <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="{{ pathto(master_doc) }}">Docs</a> &raquo;</li>
-      {% for doc in parents %}
-          <li><a href="{{ doc.link|e }}">{{ doc.title }}</a> &raquo;</li>
-      {% endfor %}
+    <li>
+		<a href="{{ pathto(master_doc) }}"><h2>{% if theme_project_icon %}<span class="breadcrumbicon rbicons topfront"><i class="fa {{ theme_project_icon }}"></i></span>{% endif %}{{ project }}</h2></a> &raquo;
+	</li>
+    {% for doc in parents %}
+    <li><a href="{{ doc.link|e }}">{{ doc.title }}</a> &raquo;</li>
+    {% endfor %}
     <li>{{ title }}</li>
       <li class="wy-breadcrumbs-aside">
         {% if display_github %}

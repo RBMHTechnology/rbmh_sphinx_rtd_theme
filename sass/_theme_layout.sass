@@ -304,3 +304,268 @@ nav.stickynav
   bottom: 0
   overflow-x: hidden
   overflow-y: hidden
+
+  
+//// RBMH Styles
+
+h1, h2, h3, h4, h5, h6 
+  font-family: $custom-font-family
+  color: $darkGray
+  font-weight: bold
+  line-height: 1
+  margin: 1em 0 15px
+  padding: 0
+
+h1 
+  font-size: 30px
+  text-transform: uppercase
+
+.wy-breadcrumbs h2
+  text-transform: uppercase
+
+  
+h2 
+  font-size: 24px  
+
+h3
+  font-size: 20px
+
+h4
+  font-size: 18px
+  
+h1 a, h2 a
+  color:inherit
+  
+  
+.wy-side-nav-search
+  background-color: $verylightGray
+
+.wy-side-nav-search > a
+  color: $darkGray
+
+.wy-side-nav-search input[type=text]
+  border-radius: 0px
+  border-color: $darkGray
+
+.wy-nav-side
+  background-color: $verylightGray
+
+.wy-menu-vertical li.current > a, .wy-menu-vertical li.current a
+  background-color: $lightGray
+
+.wy-menu-vertical a, .wy-menu-vertical li.current a
+  color: $darkGray
+
+.wy-menu-vertical a:hover,.wy-menu-vertical li.current > a:hover, .wy-menu-vertical li.current a:hover
+  background-color: white 
+
+.wy-nav-content-wrap
+  background-color: white
+
+.rst-content .note .admonition-title
+  background-color: $darkBlue
+
+.rst-content .note
+  background-color: rgba($darkBlue,0.1)
+
+.rst-content .warning .admonition-title
+  background-color: $darkYellow
+
+.rst-content .warning
+  background-color: rgba($darkYellow,0.1)  
+  
+.btn-neutral
+  background-color: $verylightGray
+
+.btn .fa
+  color: $red
+
+.caption
+  font-size: 80%
+
+code, .rst-content tt
+  color: $red
+  font-family: $monospace-font
+
+.wy-plain-list-disc li, .rst-content .section ul li, .rst-content .toctree-wrapper ul li, article ul li
+//  margin-left: 48px
+  margin-bottom: 12px
+
+.wy-table-responsive
+  margin-bottom: 0px
+
+.wy-nav-content-wrap, .wy-nav-content
+  background: white
+  background-color: white
+
+.rst-content .highlighted
+  background: $yellow
+
+.wy-nav-top
+  background: $darkGray
+
+.wy-side-nav-search
+  text-align: left
+
+.wy-side-nav-search > a, .wy-side-nav-search .wy-dropdown > a
+  margin-bottom: 0.3em
+
+.rbicons
+  color: white
+  margin-right: 10px
+  width: 40px
+  height: 40px
+  padding-top: 5px
+  padding-bottom: 5px
+  padding-left: 10px
+  padding-right: 10px
+
+.breadcrumbicon
+  background-color: $darkYellow
+  margin-bottom: 24px
+
+img.logo
+  padding: 0px
+
+.searchbox
+  padding: 4px 6px
+  margin-top: 8px
+
+.wy-side-nav-search
+  margin-bottom: 0px
+
+.alignbottom
+  bottom: 0
+
+.wy-nav-top img
+  border-radius: 0
+  width: 100px
+  height: 39px
+  background: none
+  
+a:visited
+  color: $red
+
+.wrapper-footer
+  margin-top: 50px
+  border-top: 1px solid #ddd
+  background-color: $darkGray
+  color: $white
+  font-size: 12px
+  position: relative
+  width: 100%
+  bottom: 0
+
+.wrapper-footer a
+  color: $white
+
+footer 
+  padding: 10px 0
+  color: white
+  font-size: 12px
+  text-align: center
+  margin-top: 12px
+
+footer p
+  font-size: 12px
+  
+.rst-footer-buttons
+  margin-top: 24px
+
+.highlight
+  background: #f8f8f8 !important
+  padding: 7px 7px 7px 10px !important
+  border: 1px solid #ddd !important
+  -moz-box-shadow: 3px 3px rgba(0,0,0,0.1) !important
+  -webkit-box-shadow: 3px 3px rgba(0,0,0,0.1) !important
+  box-shadow: 3px 3px rgba(0,0,0,0.1) !important
+  margin: 20px 0 20px 0 !important
+
+div[class^='highlight'] pre
+  font-size: 14px
+  font-family: $monospace-font
+
+.codeblock, pre.literal-block, .rst-content .literal-block, .rst-content pre.literal-block, div[class^='highlight']
+  border: 0px
+  
+body
+  color: rgb(100, 101, 103)
+  
+// Blockquote Style
+
+blockquote 
+  background: $verylightGray
+  border-left: 5px solid $lightBlue
+  margin: 1.5em 10px
+  padding: 0.5em 10px
+  quotes: "\201C""\201D""\2018""\2019"
+
+blockquote:before
+  color: $lightBlue
+  content: open-quote
+  font-size: 4em
+  line-height: 0.1em
+  margin-right: 0.15em
+  vertical-align: -0.4em
+
+blockquote p 
+  display: inline
+
+// tables
+
+table 
+  width: 100%
+  border-collapse: collapse
+  border: 1px solid $darkBlue
+  margin: 25px auto
+  background: white
+
+th 
+  background: $lightBlue
+  padding: 10px
+  font-weight: bold
+  color: white
+  border: 1px solid $darkBlue
+  box-shadow: inset 0px 1px 2px $lightBlue
+  transition: all 0.2s
+
+tr 
+  border-bottom: 1px solid $lightGray
+
+tr:last-child 
+  border-bottom: 0px
+
+td 
+  border-right: 1px solid $lightGray
+  padding: 10px
+  transition: all 0.2s
+
+td:last-child 
+  border-right: 0px
+
+td.selected 
+  background: $verylightGray
+
+td input 
+  font-size: 14px
+  background: none
+  outline: none
+  border: 0
+  display: table-cell
+  height: 100%
+  width: 100%
+
+td input:focus 
+  box-shadow: 0 1px 0 $lightBlue
+  color: $lightBlue
+
+::-moz-selection 
+  background: $lightBlue
+  color: white
+
+::selection 
+  background: $lightBlue
+  color: white
+ 
+.rst-content .line-block
+  margin-left: 0px !important
